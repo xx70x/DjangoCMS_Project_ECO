@@ -1,0 +1,378 @@
+{% load cms_tags menu_tags sekizai_tags %}
+
+
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html class="wide wow-animation desktop landscape firefox rd-navbar-static-linked" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Site Title-->
+    <title>{% block title %}Эко-БОС-Дом{% placeholder "title" %}{% endblock title %}</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <!-- <link rel="icon" href="#.template-help.com/wt_prod-12390/images/favicon.ico" type="image/x-icon"> -->
+    <!-- Stylesheets-->
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" > -->
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/> -->
+    <!-- <link href="https://f.usemind.org/f/1/fas/c.css" rel="stylesheet" /> -->
+    <!-- <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'/> -->
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Libre+Franklin:200,300,500,600,300italic">
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}Home_files/css.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}Home_files/bootstrap.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}Home_files/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="Pricing%20Table_files/css.css"> -->
+    <!-- <link rel="stylesheet" href="{{ STATIC_URL }}Pricing%20Table_files/bootstrap.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}Pricing%20Table_files/style.css">
+
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}Home%20Business_files/css.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}Home%20Business_files/bootstrap.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}Home%20Business_files/style.css"> -->
+        <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+    {% render_block "css" %}           
+  </head>
+  {% cms_toolbar %}
+  <body>
+
+
+    
+  {% block header %}
+    
+        <!-- Page Header-->
+      <header class="page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap" style="height: 214.6px;">
+          <nav class="rd-navbar rd-navbar_corporate rd-navbar-original rd-navbar-static" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" data-md-stick-up-offset="60px" data-lg-stick-up-offset="145px" data-xl-stick-up-offset="145px" data-xxl-stick-up-offset="145px" data-body-class="rd-navbar-corporate-linked">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel">
+              <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+              <!-- RD Navbar Brand-->
+              <div class="rd-navbar-brand rd-navbar-static--hidden"><a class="brand-name" href="#-help.com/wt_prod-12390/index.html"><img src="{{ STATIC_URL }}Home_files/logo-174x32.png" alt="" width="174" height="32"></a></div>
+            </div>
+            <!-- RD Navbar Top Panel-->
+            <div class="rd-navbar-top-panel rd-navbar-top-panel_extended">
+              <div class="rd-navbar-top-panel__main toggle-original-elements">
+                <div class="rd-navbar-top-panel__toggle rd-navbar-fixed__element-1 rd-navbar-static--hidden toggle-original" data-rd-navbar-toggle=".rd-navbar-top-panel__main"><span></span></div>
+                <div class="rd-navbar-top-panel__content">
+                  <div class="rd-navbar-top-panel__content-top">
+                    <div class="rd-navbar-top-panel__left">
+                      <p>Крутые говнобаки</p>
+                      <!-- Крутые говнобаки -->
+                    </div>
+                    <div class="rd-navbar-top-panel__right">
+                      <!-- <ul class="rd-navbar-items-list">
+                        <li>
+                          <ul class="list-inline-xxs">
+                            <li><a href="#" data-toggle="modal" data-target="#modalLogin">Sign In</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modalRegister">Create an Account</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="list-inline-xxs">
+                            <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="#"></a></li>
+                            <li><a class="icon icon-xxs icon-primary fa fa-twitter" href="#"></a></li>
+                            <li><a class="icon icon-xxs icon-primary fa fa-google-plus" href="#"></a></li>
+                            <li><a class="icon icon-xxs icon-primary fa fa-vimeo" href="#"></a></li>
+                            <li><a class="icon icon-xxs icon-primary fa fa-youtube" href="#"></a></li>
+                            <li><a class="icon icon-xxs icon-primary fa fa-pinterest-p" href="#"></a></li>
+                          </ul>
+                        </li>
+                      </ul> -->
+                    </div>
+                  </div>
+                  <div class="rd-navbar-top-panel__content-bottom rd-navbar-content_middle rd-navbar-content_justify">
+                    <!-- RD Navbar Brand-->
+                    <div class="rd-navbar-brand rd-navbar-fixed--hidden"><a class="brand-name" href="#-help.com/wt_prod-12390/index.html"><img src="{{ STATIC_URL }}Home_files/logo-174x32.png" alt="" width="174" height="32"></a></div>
+                    <ul class="list-bordered">
+                      <li>
+                        <div class="unit flex-row align-items-center unit-spacing-sm">
+                          <div class="unit-left"><span class="icon icon-md icon-primary linear-icon-map-marker"></span></div>
+                          <div class="unit-body">
+                            <dl class="list-terms-modern">
+                              <dt>Адрес</dt>
+                              <dd><a href="#">4578 Marmora Road, Glasgow, D04 89GR</a></dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit flex-row align-items-center unit-spacing-sm">
+                          <div class="unit-left"><span class="icon icon-md icon-primary linear-icon-telephone"></span></div>
+                          <div class="unit-body">
+                            <dl class="list-terms-modern">
+                              <dt>Телефоны</dt>
+                              <dd>
+                                <ul class="list-semicolon">
+                                  <li><a href="callto:#">(800) 123-0045</a></li>
+                                  <li><a href="callto:#">(800) 123-0045</a></li>
+                                </ul>
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit flex-row align-items-center unit-spacing-sm">
+                          <div class="unit-left"><span class="icon icon-md icon-primary linear-icon-clock3"></span></div>
+                          <div class="unit-body">
+                            <dl class="list-terms-modern">
+                              <dt>Время работы</dt>
+                              <dd>Пн-Пт: 09.00 - 18.00 </dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-bottom-panel rd-navbar-search-wrap toggle-original-elements">
+              <!-- RD Navbar Nav-->
+              <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable toggle-original-elements">
+                <ul class="rd-navbar-items-list rd-navbar-search_collapsable">
+                  <li>
+                    <button class="rd-navbar-search__toggle rd-navbar-fixed--hidden toggle-original" data-rd-navbar-toggle=".rd-navbar-search-wrap"></button>
+                  </li>
+                  <!-- <li class="rd-navbar-nav-wrap__shop"><a class="icon icon-md linear-icon-cart link-gray-4" href="#-help.com/wt_prod-12390/cart.html"></a></li> -->
+                 </ul>
+                <!-- RD Search-->
+                <div class="rd-navbar-search rd-navbar-search_toggled rd-navbar-search_not-collapsable">
+                  <form class="rd-search" action="search-results.html" method="GET" data-search-live="rd-search-results-live">
+                    <div class="form-wrap">
+                      <input class="form-input" id="rd-navbar-search-form-input" name="s" autocomplete="off" type="text">
+                      <label class="form-label rd-input-label" for="rd-navbar-search-form-input">Введите запрос</label>
+                      <div class="rd-search-results-live cleared" id="rd-search-results-live"></div>
+                    </div>
+                    <button class="rd-search__submit" type="submit"></button>
+                  </form>
+                  <div class="rd-navbar-fixed--hidden">
+                    <button class="rd-navbar-search__toggle" data-custom-toggle=".rd-navbar-search-wrap" data-custom-toggle-disable-on-blur="true"></button>
+                  </div>
+                </div>
+
+                <!-- <style type="text/css">
+                    .nav {
+                        padding-left: 0;
+                    }
+                    .nav li {
+                        display: inline;
+                        list-style-type: none;
+                        padding-right: 20px;
+                    }
+                    .container {
+                        width: 940px;
+                        margin: 0 auto
+                    }
+                    .content {
+                        float: left;
+                        width: 80%;
+                    }
+                    .sidebar {
+                        float: left;
+                        width: 20%;
+                    }
+                </style>
+ -->
+
+                <div class="rd-navbar-search_collapsable">
+                  <ul class="rd-navbar-nav">
+                    
+                    {% show_menu 0 100 100 100 %}
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+      </header>
+    {% endblock header %}
+
+
+    <!-- Main Content -->
+    <!-- <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            
+        </div>
+    </div> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"> -->
+               {% block content %}
+                Текст базового шаблона(просто для демонстрации)
+                {% endblock %}                
+           <!--  </div>
+        </div>            
+    </div> -->
+
+
+        {% block footer %}
+        <!-- Page Footer-->
+      <section class="pre-footer-corporate">
+        <div class="container">
+          <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
+            <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
+              <h6>About</h6>
+              <p>Monstroid² is HTML template that fits for both 
+developers and beginners. It comes loaded with an assortment of tools 
+and features that make customization process much easier. A pack of 
+child themes, specially designed for various business niches, allows 
+users to create a fully functional site for any specific business 
+quickly and worry-free.</p>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
+              <h6>Navigation</h6>
+              <ul class="list-xxs">
+                <li><a href="#">Retina Homepage</a></li>
+                <li><a href="#">New Page Examples</a></li>
+                <li><a href="#">Parallax Sections</a></li>
+                <li><a href="#">Shortcode Central</a></li>
+                <li><a href="#">Ultimate Font Collection</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
+              <h6>Recent Comments</h6>
+              <ul class="list-xs">
+                <li>
+                  <!-- Comment minimal-->
+                  <article class="comment-minimal">
+                    <p class="comment-minimal__author">Brian Williamson on</p>
+                    <p class="comment-minimal__link"><a href="#">Site Speed and Search Engines Optimization Aspects</a></p>
+                  </article>
+                </li>
+                <li>
+                  <!-- Comment minimal-->
+                  <article class="comment-minimal">
+                    <p class="comment-minimal__author">Brian Williamson on</p>
+                    <p class="comment-minimal__link"><a href="#">5 Things to Know Before You Buy an HTML Template</a></p>
+                  </article>
+                </li>
+                <li>
+                  <!-- Comment minimal-->
+                  <article class="comment-minimal">
+                    <p class="comment-minimal__author">Brian Williamson on</p>
+                    <p class="comment-minimal__link"><a href="#">Turning Your Site into a Sales Machine</a></p>
+                  </article>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
+              <h6>Contacts</h6>
+              <ul class="list-xs">
+                <li>
+                  <dl class="list-terms-minimal">
+                    <dt>Address</dt>
+                    <dd>4578 Marmora Road, Glasgow, D04 89GR</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl class="list-terms-minimal">
+                    <dt>Phones</dt>
+                    <dd>
+                      <ul class="list-semicolon">
+                        <li><a href="callto:#">(800) 123-0045</a></li>
+                        <li><a href="callto:#">(800) 123-0045</a></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl class="list-terms-minimal">
+                    <dt>E-mail</dt>
+                    <dd><a href="mailto:#">info@demolink.org</a></dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl class="list-terms-minimal">
+                    <dt>We are open</dt>
+                    <dd>Mn-Fr: 10 am-8 pm</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-corporate">
+        <div class="container">
+          <div class="footer-corporate__inner">
+            <p class="rights"><span>Эко-БОС</span><span>&nbsp;</span><span id="copyright-year">2018</span>.
+            </p>
+            <ul class="list-inline-xxs">
+              <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="#"></a></li>
+              <li><a class="icon icon-xxs icon-primary fa fa-twitter" href="#"></a></li>
+              <li><a class="icon icon-xxs icon-primary fa fa-google-plus" href="#"></a></li>
+              <li><a class="icon icon-xxs icon-primary fa fa-vimeo" href="#"></a></li>
+              <li><a class="icon icon-xxs icon-primary fa fa-youtube" href="#"></a></li>
+              <li><a class="icon icon-xxs icon-primary fa fa-pinterest" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+        {% endblock footer %}
+   
+    
+            {% render_block "js" %}
+            <!-- Global Mailform Output-->
+        <div class="snackbars" id="form-output-global"></div>
+        <!-- Javascript-->
+        <script async="" src="{{ STATIC_URL }}Home_files/gtm.js"></script><script src="{{ STATIC_URL }}Home_files/core.js"></script>
+        <script src="{{ STATIC_URL }}Home_files/script.js"></script>
+      <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
+    <div class="igtranslator-main-div" style="display: none; width: 0px; height: 0px;"><iframe src="{{ STATIC_URL }}Home_files/blank.html" class="igtranslator-iframe" scrolling="no" frameborder="0"></iframe></div><div class="igtranslator-activator-icon bounceIn" style="background-image: url(&quot;moz-extension://48436779-aa14-48d2-b9d2-b5bbd7ac329e/data/icons/home.png&quot;); display: none;" title="Click to Show Translation"></div><a href="#" id="ui-to-top" class="ui-to-top active"></a>
+    </body><!-- Google Tag Manager --><style type="text/css" id="igtranslator-color"></style>
+</html>
+
+
+
+
+
+
+    <!-- <head>
+        <title>{# block title %}This is my new project home page{# endblock title %}</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style type="text/css">
+            .nav {
+                padding-left: 0;
+            }
+            .nav li {
+                display: inline;
+                list-style-type: none;
+                padding-right: 20px;
+            }
+            .container {
+                width: 940px;
+                margin: 0 auto
+            }
+            .content {
+                float: left;
+                width: 80%;
+            }
+            .sidebar {
+                float: left;
+                width: 20%;
+            }
+        </style>
+        {# render_block "css" %}
+    </head>
+    <body>
+        {# cms_toolbar %}
+        <div class="container">
+            <ul class="nav">
+                {# show_menu 0 100 100 100 %}
+            </ul>
+            {# block content %}{# endblock content %}
+        </div>
+        {#render_block "js" %}
+    </body>
+</html>
+ -->
